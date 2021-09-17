@@ -1,1 +1,6 @@
 # GrasshopperProblem
+The publication The Grasshopper Problem by Olga Goulko and Adrian Kent studied the following optimization question in geometric combinatorics. For a given subset S of the plane of area 1, consider a point (the grasshopper) chosen uniformly at random within S. The grasshopper then makes a jump, uniformly at random, at distance of exactly k. Given that k is known, find S that maximizes the probability of the grasshopper landing (after the jump) within S (referred to as probability of success). A variety of shapes are known that try to maximize the probability of success. Intuition would think the disc is optimal for small jumps of length k in the plane. Interestingly, for all values of k the optimal shape is in fact never a disc. As well, for values of k between 0.2 and 1, the optimal shapes are non-convex. We limit S to be a simply connected space where the set of all points (x, y) on the boundary of the space satisfy the equation of an ellipse,
+
+|x/a|^n + |y/b|^n = 1, 
+
+where n, α and b are positive numbers, and the vertical bars around a number indicate the absolute value of the number. The goal was to analyze the values of α in response to varying k values for a given n. All experiments were carried out computationally and results were documented with 10-digit accuracy using C++.
